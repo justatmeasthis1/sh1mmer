@@ -105,7 +105,8 @@ unblock_devmode() {
 
 shell() {
 	cleanup
-	echo "You can su chronos if you need to use chromebrew"
+	echo "You can su chronos if you need to use chromebrew, type exit then press [ENTER] if you wound up here by mistake."
+	echo "To unenroll do 'crossystem battery_cutoff_request=1' this is because the fwmp (firmware management parameters went to the battery, and this command cuts off all requests to the battery"
 	bash
 	setup
 }
