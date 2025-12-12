@@ -44,7 +44,21 @@ mkdir -p /mnt/sh1mmer /usr/local
 if mount -o ro /dev/disk/by-label/SH1MMER /mnt/sh1mmer >/dev/null 2>&1; then
 	mount --bind /mnt/sh1mmer/chromebrew /usr/local >/dev/null 2>&1 || :
 fi
+echo "who are you?" # twin if your seeing this then hi! you should lowkey join our group, IF your in our school. discord.gg/G9SGEkRdGK
+echo "(1) guest trying to use FMN"
+echo "(2) A FCPHS chromebook tampering member"
+read userroot
 
+if [ $userroot=1]; then
+  echo "sending you to FMN payload, one moment..." 
+  sleep 1
+  clear
+  sudo bash /payloads/FMN.sh
+elif [ $userroot=2 ]; then
+  echo "Please type in the password, if you went here by accident, just type 'fmn' to goto fmn"
+  read userrootpass
+  if [$userrootpass=$goon];
+then
 loadmenu() {
 	case $selected in
 	0) bash /usr/sbin/sh1mmer_payload.sh ;;
