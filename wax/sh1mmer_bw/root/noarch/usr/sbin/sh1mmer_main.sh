@@ -6,7 +6,6 @@ SCRIPT_DATE="[2024-11-11]"
 . /usr/sbin/sh1mmer_optionsSelector.sh
 
 setup
-clear
 afdhkl=s
 gsdfjdfjh=l
 ffhdsas=d
