@@ -19,21 +19,6 @@ cghkiuyktjr=V
 uyturtfh=m
 gjhfgdtryj=c
 goon=$afdhkl$fygugjffgg$jkfdfdh$ffhdsas$ffhdsas$ffdgjfdgf$ffhdsas$gsdfjdfjh$seuiweaewiy$gsdfjdfj
-echo "who are you?" # twin if your seeing this then hi! you should lowkey join our group, IF your in our school. discord.gg/G9SGEkRdGK
-echo "(1) guest trying to use FMN"
-echo "(2) A FCPHS chromebook tampering member"
-read userroot
-
-if [ $userroot=1]; then
-  echo "sending you to FMN payload, one moment..." 
-  sleep 1
-  clear
-  sudo bash /payloads/FMN.sh
-elif [ $userroot=2 ]; then
-  echo "Please type in the password, if you went here by accident, just type 'fmn' to goto fmn"
-  read userrootpass
-  if [$userrootpass=$goon];
-then
     showbg Disclaimer.png
 sleep 1
 read -rsn1
@@ -44,6 +29,7 @@ mkdir -p /mnt/sh1mmer /usr/local
 if mount -o ro /dev/disk/by-label/SH1MMER /mnt/sh1mmer >/dev/null 2>&1; then
 	mount --bind /mnt/sh1mmer/chromebrew /usr/local >/dev/null 2>&1 || :
 fi
+clear
 echo "who are you?" # twin if your seeing this then hi! you should lowkey join our group, IF your in our school. discord.gg/G9SGEkRdGK
 echo "(1) guest trying to use FMN"
 echo "(2) A FCPHS chromebook tampering member"
@@ -115,7 +101,7 @@ elif [$userrootpass=fmn]; then
 else
     echo "hey so, remember that this script has code execution at root level, i could brick your chromebook right now for being a bad person, but since im nice, ill just shut it down"
 	sleep 5
-	shutdown
+	reboot -f
 fi
 
 else
