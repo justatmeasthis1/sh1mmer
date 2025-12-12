@@ -33,6 +33,7 @@ mapname() {
 		'weston.sh') echo -n "Launch the weston Desktop Environment. REQUIRES A DEVSHIM" ;;
 		'wifi.sh') echo -n "Connect to wifi" ;;
 		'wp-disable.sh') echo -n "WP disable loop (for pencil method)" ;;
+		'FMN.sh') echo -n "FMN - Prevents updating" ;;
 		*) echo -n "$1" ;;
 	esac
 }
