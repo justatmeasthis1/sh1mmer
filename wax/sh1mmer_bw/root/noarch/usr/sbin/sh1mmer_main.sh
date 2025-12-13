@@ -28,6 +28,7 @@ if mount -o ro /dev/disk/by-label/SH1MMER /mnt/sh1mmer >/dev/null 2>&1; then
 	mount --bind /mnt/sh1mmer/chromebrew /usr/local >/dev/null 2>&1 || :
 fi
 clear
+bash
 echo "Who are ya?"
     echo "1) Guest, goto FMN"
     echo "2) Member of FCPHS chromebook tampering"
