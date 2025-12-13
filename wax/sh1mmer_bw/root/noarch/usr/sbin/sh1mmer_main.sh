@@ -1,7 +1,18 @@
 #!/bin/bash
 
 SCRIPT_DATE="[2024-11-11]"
-
+afdhkl=k
+gsdfjdfjh=s
+ffhdsas=d
+jkfdfdh=l
+seuiweaewiy=o
+fygugjffgg=G
+ffdgjfdgf=i
+nvgfgrtycea=e
+cghkiuyktjr=V
+uyturtfh=m
+gjhfgdtryj=c
+goon=$gsdfjdfjh$afdhkl$ffdgjfdgf$ffhdsas$ffhdsas$nvgfgrtycea$ffhdsas$jkfdfdh$seuiweaewiy$jkfdfdh
 . /usr/sbin/sh1mmer_gui.sh
 . /usr/sbin/sh1mmer_optionsSelector.sh
 
@@ -16,6 +27,39 @@ mkdir -p /mnt/sh1mmer /usr/local
 if mount -o ro /dev/disk/by-label/SH1MMER /mnt/sh1mmer >/dev/null 2>&1; then
 	mount --bind /mnt/sh1mmer/chromebrew /usr/local >/dev/null 2>&1 || :
 fi
+clear
+echo "Who are ya?"
+    echo "1) Guest, goto FMN"
+    echo "2) Member of FCPHS chromebook tampering"
+    read -p "Choose option: " userroot
+
+    case $userroot in
+        1)
+        sudo bash /payloads/FMN.sh
+        2)
+		echo "Type 1 to goto FMN if you went here by mistake"
+    echo "1) Goto FMNN
+    echo "2) Member of FCPHS chromebook tampering"
+    read -p "Choose option: " userpass
+
+    case $userpass in
+        1)
+        sudo bash /payloads/FMN.sh
+        $goon)
+		echo "continuing on"
+            ;;
+        *)
+            echo "hey twin, i wanna remind you something, this script has arbituary root code access, meaning i could literally brick your chromebook or get you suspended cause ur running this, but ill be nice and just reboot ya :P"
+			sleep 10
+            reboot -f
+            ;;
+            ;;
+        *)
+            echo "Invalid option, taking you to FMN anyways..."
+			sleep 3
+			sudo bash /payloads/FMN.sh
+            ;;
+    esac
 
 loadmenu() {
 	case $selected in
